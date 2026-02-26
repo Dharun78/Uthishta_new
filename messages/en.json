@@ -1,0 +1,25 @@
+{
+    "Navigation": {
+        "home": "Home",
+        "schools": "Find Schools",
+        "about": "About NGO"
+    },
+    "Hero": {
+        "title": "Empowering Karnataka's Future Innovators",
+        "subtitle": "Discover Junior Technical Schools across rural and urban Karnataka. Gain practical skills for a brighter tomorrow.",
+        "searchPlaceholder": "Search by location or course...",
+        "exploreButton": "Explore Schools"
+    },
+    "School": {
+        "courses": "Courses Offered",
+        "alumniNetwork": "Alumni Network",
+        "joinAlumni": "Join Alumni Hub",
+        "viewDetails": "View Details"
+    },
+    "Chatbot": {
+        "greeting": "Namaskara! How can I help you find a technical school today?",
+        "promptOption1": "I want to study computers in Bangalore.",
+        "promptOption2": "Show me rural schools for Agriculture Tech.",
+        "inputPlaceholder": "Type your message..."
+    }
+}
