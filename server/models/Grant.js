@@ -1,0 +1,98 @@
+const mongoose = require('mongoose')
+
+const grantSchema = new mongoose.Schema({
+  title: {
+    type: String,
+    required: true
+  },
+  description: {
+    type: String,
+    required: true
+  },
+  grantProvider: {
+    type: String,
+    required: true
+  },
+  providerType: {
+    type: String,
+    enum: ['government', 'private', 'ngo', 'corporate', 'international'],
+    required: true
+  },
+  amount: {
+    min: Number,
+    max: Number,
+    currency: {
+      type: String,
+      default: 'INR'
+    }
+  },
+  eligibilityCriteria: [{
+    criterion: String,
+    met: Boolean,
+    notes: String
+  }],
+  applicationDeadline: {
+    type: Date,
+    required: true
+  },
+  grantUrl: {
+    type: String
+  },
+  applicationUrl: {
+    type: String
+  },
+  category: {
+    type: String,
+    enum: ['education', 'infrastructure', 'technology', 'research', 'skill-development', 'other']
+  },
+  targetBeneficiaries: [String],
+  aiEligibilityScore: {
+    type: Number,
+    min: 0,
+    max: 100
+  },
+  aiRecommendation: {
+    shouldApply: Boolean,
+    reasoning: String,
+    successProbability: Number,
+    requiredDocuments: [String],
+    estimatedEffort: String
+  },
+  applicableSchools: [{
+    type: String,
+    enum: ['Ballari', 'Bhadravati', 'Hubballi', 'Bagalkot', 'Kalburgi', 'Mangalore']
+  }],
+  status: {
+    type: String,
+    enum: ['discovered', 'under-review', 'eligible', 'not-eligible', 'applied', 'approved', 'rejected'],
+    default: 'discovered'
+  },
+  applicationStatus: {
+    appliedDate: Date,
+    appliedBy: String,
+    documents: [String],
+    followUpDates: [Date],
+    outcome: String
+  },
+  discoveredBy: {
+    type: String,
+    enum: ['ai-agent', 'manual', 'notification'],
+    default: 'ai-agent'
+  },
+  discoveredAt: {
+    type: Date,
+    default: Date.now
+  },
+  lastUpdated: {
+    type: Date,
+    default: Date.now
+  }
+})
+
+// Update timestamp
+grantSchema.pre('save', function(next) {
+  this.lastUpdated = Date.now()
+  next()
+})
+
+module.exports = mongoose.model('Grant', grantSchema)

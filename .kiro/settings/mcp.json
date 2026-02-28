@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "gjts-ai-server": {
+      "command": "node",
+      "args": ["mcp-server/index.js"],
+      "env": {},
+      "disabled": false,
+      "autoApprove": [
+        "chat_with_context",
+        "analyze_sentiment",
+        "recommend_school"
+      ]
+    }
+  }
+}

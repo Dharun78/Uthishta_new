@@ -1,0 +1,49 @@
+'use client'
+import { useState, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
+import Link from 'next/link'
+
+export default function HomePageEditor() {
+  const router = useRouter()
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const adminData = localStorage.getItem('schoolAdmin')
+    if (!adminData) {
+      router.push('/dashboard/login')
+      return
+    }
+    const parsedAdmin = JSON.parse(adminData)
+    if (parsedAdmin.role !== 'super_admin') {
+      alert('Only Super Admin can edit website pages')
+      router.push('/dashboard')
+      return
+    }
+    setLoading(false)
+  }, [router])
+
+  if (loading) {
+    return <div className="min-h-screen flex items-center justify-center">Loading...</div>
+  }
+
+  return (
+    <div className="min-h-screen bg-gray-50 p-8">
+      <Link href="/dashboard/pages" className="text-blue-600 hover:underline">
+        ← Back to Pages
+      </Link>
+      <h1 className="text-3xl font-bold mt-4">Home Page Editor</h1>
+      <div className="mt-8 p-6 bg-yellow-50 border-l-4 border-yellow-400 rounded">
+        <h2 className="text-xl font-bold text-yellow-800 mb-2">⚠️ Under Construction</h2>
+        <p className="text-yellow-700">
+          The home page editor is currently experiencing technical issues. 
+          Please use the other page editors (About, Admissions, Contact, Alumni) which are fully functional.
+        </p>
+      </div>
+      <div className="mt-6">
+        <Link href="/dashboard/pages" className="btn-primary inline-block">
+          View All Pages
+        </Link>
+      </div>
+    </div>
+  )
+}

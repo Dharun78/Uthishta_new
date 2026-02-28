@@ -1,0 +1,5 @@
+{
+  "/api/chatbot/route": "app/api/chatbot/route.js",
+  "/dashboard/grants/page": "app/dashboard/grants/page.js",
+  "/api/dashboard/grants/route": "app/api/dashboard/grants/route.js"
+}

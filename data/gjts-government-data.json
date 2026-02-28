@@ -1,0 +1,280 @@
+{
+  "about": {
+    "fullName": "Government Junior Technical Schools",
+    "state": "Karnataka",
+    "totalSchools": 6,
+    "establishedYear": "2013",
+    "managedBy": "Department of Technical Education, Government of Karnataka",
+    "partnership": "Quest Global & Uthishta NGO",
+    "objective": "To provide quality technical education to students from economically weaker sections and prepare them for technical careers",
+    "grades": "8th to 10th standard",
+    "totalStudents": "800+",
+    "admissionGrowth": "17% year-on-year",
+    "placementRate": "70%"
+  },
+  "schools": [
+    {
+      "id": "GJTS-BLR-001",
+      "name": "Government Junior Technical School, Ballari",
+      "shortName": "GJTS Ballari",
+      "location": "Ballari, Karnataka",
+      "district": "Ballari",
+      "established": "2013",
+      "students": 150,
+      "address": "Ballari District, Karnataka - 583101",
+      "phone": "+91-8392-XXXXXX",
+      "email": "gjts.ballari@dte.kar.nic.in",
+      "courses": ["Electronics", "Mechanical Engineering", "Computer Science"],
+      "facilities": ["Science Labs", "Computer Lab", "Workshop", "Library", "Sports Ground"],
+      "achievements": [
+        "Best Technical School Award 2023",
+        "100% pass rate in SSLC 2024",
+        "State-level Science Exhibition Winners"
+      ]
+    },
+    {
+      "id": "GJTS-BHA-002",
+      "name": "Government Junior Technical School, Bhadravati",
+      "shortName": "GJTS Bhadravati",
+      "location": "Bhadravati, Karnataka",
+      "district": "Shivamogga",
+      "established": "2023",
+      "students": 140,
+      "address": "Bhadravati, Shivamogga District, Karnataka - 577301",
+      "phone": "+91-8182-XXXXXX",
+      "email": "gjts.bhadravati@dte.kar.nic.in",
+      "courses": ["Electronics", "Mechanical Engineering", "Electrical Engineering"],
+      "facilities": ["Science Labs", "Computer Lab", "Workshop", "Library", "Hostel"],
+      "achievements": [
+        "Newly established with modern infrastructure",
+        "Partnership with local industries",
+        "Smart classroom facilities"
+      ]
+    },
+    {
+      "id": "GJTS-HUB-003",
+      "name": "Government Junior Technical School, Hubballi",
+      "shortName": "GJTS Hubballi",
+      "location": "Hubballi, Karnataka",
+      "district": "Dharwad",
+      "established": "2013",
+      "students": 160,
+      "address": "Hubballi, Dharwad District, Karnataka - 580020",
+      "phone": "+91-836-XXXXXX",
+      "email": "gjts.hubballi@dte.kar.nic.in",
+      "courses": ["Electronics", "Mechanical Engineering", "Computer Science"],
+      "facilities": ["Advanced Labs", "Computer Lab", "Workshop", "Library", "Sports Complex"],
+      "achievements": [
+        "Highest placement rate in 2024",
+        "State-level Robotics Competition Winners",
+        "Excellence in Technical Education Award"
+      ]
+    },
+    {
+      "id": "GJTS-BAG-004",
+      "name": "Government Junior Technical School, Bagalkot",
+      "shortName": "GJTS Bagalkot",
+      "location": "Bagalkot, Karnataka",
+      "district": "Bagalkot",
+      "established": "2023",
+      "students": 135,
+      "address": "Bagalkot District, Karnataka - 587101",
+      "phone": "+91-8354-XXXXXX",
+      "email": "gjts.bagalkot@dte.kar.nic.in",
+      "courses": ["Electronics", "Mechanical Engineering"],
+      "facilities": ["Science Labs", "Computer Lab", "Workshop", "Library"],
+      "achievements": [
+        "New campus with modern facilities",
+        "Industry collaboration programs",
+        "Digital learning initiatives"
+      ]
+    },
+    {
+      "id": "GJTS-KAL-005",
+      "name": "Government Junior Technical School, Kalburgi",
+      "shortName": "GJTS Kalburgi",
+      "location": "Kalburgi, Karnataka",
+      "district": "Kalaburagi",
+      "established": "2023",
+      "students": 145,
+      "address": "Kalburgi (Kalaburagi), Karnataka - 585101",
+      "phone": "+91-8472-XXXXXX",
+      "email": "gjts.kalburgi@dte.kar.nic.in",
+      "courses": ["Electronics", "Mechanical Engineering", "Computer Science"],
+      "facilities": ["Science Labs", "Computer Lab", "Workshop", "Library", "Hostel"],
+      "achievements": [
+        "Growing student enrollment",
+        "Community outreach programs",
+        "Skill development initiatives"
+      ]
+    },
+    {
+      "id": "GJTS-MNG-006",
+      "name": "Government Junior Technical School, Mangalore",
+      "shortName": "GJTS Mangalore",
+      "location": "Mangalore, Karnataka",
+      "district": "Dakshina Kannada",
+      "established": "2023",
+      "students": 155,
+      "address": "Mangalore, Dakshina Kannada District, Karnataka - 575001",
+      "phone": "+91-824-XXXXXX",
+      "email": "gjts.mangalore@dte.kar.nic.in",
+      "courses": ["Electronics", "Mechanical Engineering", "Electrical Engineering"],
+      "facilities": ["Advanced Labs", "Computer Lab", "Workshop", "Library", "Sports Facilities"],
+      "achievements": [
+        "Coastal region's premier technical school",
+        "Industry partnerships with local companies",
+        "Innovation and entrepreneurship programs"
+      ]
+    }
+  ],
+  "admissions": {
+    "eligibility": "Students who have completed 7th standard",
+    "ageLimit": "13-15 years",
+    "process": [
+      "Online application through official website",
+      "Entrance examination",
+      "Merit-based selection",
+      "Document verification",
+      "Final admission"
+    ],
+    "documents": [
+      "7th standard marks card",
+      "Transfer certificate",
+      "Caste certificate (if applicable)",
+      "Income certificate",
+      "Aadhar card",
+      "Passport size photographs"
+    ],
+    "fees": "Minimal fees with scholarship support available",
+    "scholarships": [
+      "Merit-based scholarships for top performers",
+      "SC/ST scholarships",
+      "Minority scholarships",
+      "EWS category support",
+      "Quest Global scholarship for engineering aspirants"
+    ]
+  },
+  "courses": {
+    "duration": "3 years (Grade 8 to Grade 10)",
+    "curriculum": "State Board syllabus with technical subjects",
+    "streams": [
+      {
+        "name": "Electronics",
+        "description": "Basic electronics, circuits, digital electronics, and practical training",
+        "careerPaths": ["Electronics Technician", "Maintenance Engineer", "Further studies in Electronics Engineering"]
+      },
+      {
+        "name": "Mechanical Engineering",
+        "description": "Workshop practice, machine tools, fitting, welding, and mechanical systems",
+        "careerPaths": ["Mechanical Technician", "Production Assistant", "Further studies in Mechanical Engineering"]
+      },
+      {
+        "name": "Computer Science",
+        "description": "Programming basics, computer hardware, software applications, and web development",
+        "careerPaths": ["IT Support", "Junior Programmer", "Further studies in Computer Science"]
+      },
+      {
+        "name": "Electrical Engineering",
+        "description": "Electrical circuits, wiring, motors, generators, and power systems",
+        "careerPaths": ["Electrical Technician", "Wireman", "Further studies in Electrical Engineering"]
+      }
+    ]
+  },
+  "facilities": {
+    "common": [
+      "Well-equipped science laboratories",
+      "Modern computer labs with internet",
+      "Technical workshops with latest equipment",
+      "Well-stocked libraries",
+      "Sports facilities and playgrounds",
+      "Separate hostels for boys and girls (select campuses)",
+      "Transportation facilities",
+      "Medical facilities"
+    ],
+    "provided": [
+      "Free uniforms",
+      "Free school bags",
+      "Free tool kits",
+      "Free textbooks",
+      "Free sports materials",
+      "Nutritious mid-day meals"
+    ]
+  },
+  "placements": {
+    "rate": "70%",
+    "partners": [
+      "Quest Global",
+      "Bosch",
+      "Toyota",
+      "Infosys",
+      "TCS",
+      "Local industries"
+    ],
+    "support": [
+      "Career counseling",
+      "Skill development programs",
+      "Industry visits",
+      "Internship opportunities",
+      "Placement assistance",
+      "Higher education guidance"
+    ],
+    "pathways": [
+      "Direct employment in technical roles",
+      "Diploma courses through lateral entry",
+      "Engineering degrees through DCET",
+      "ITI courses",
+      "Entrepreneurship"
+    ]
+  },
+  "achievements": {
+    "overall": [
+      "800+ students enrolled across 6 campuses",
+      "17% year-on-year growth in admissions",
+      "70% placement rate for graduates",
+      "Partnership with Quest Global and Uthishta NGO",
+      "Recognition from Karnataka State Government",
+      "Multiple state-level competition winners"
+    ]
+  },
+  "contact": {
+    "headquarters": {
+      "name": "Department of Technical Education, Karnataka",
+      "address": "Bangalore, Karnataka",
+      "phone": "+91-80-XXXX-XXXX",
+      "email": "dte@kar.nic.in",
+      "website": "https://dte.kar.nic.in"
+    },
+    "support": {
+      "email": "info@gjtskarnataka.edu.in",
+      "helpline": "1800-XXX-XXXX",
+      "hours": "Monday to Friday, 9:00 AM to 5:00 PM"
+    }
+  },
+  "faqs": [
+    {
+      "question": "What is the eligibility for admission?",
+      "answer": "Students who have completed 7th standard and are between 13-15 years of age are eligible to apply."
+    },
+    {
+      "question": "Are there any fees?",
+      "answer": "The fees are minimal, and various scholarships are available for eligible students including merit-based, SC/ST, and minority scholarships."
+    },
+    {
+      "question": "What facilities are provided?",
+      "answer": "Students receive free uniforms, school bags, tool kits, textbooks, sports materials, and nutritious mid-day meals. Schools have modern labs, libraries, and sports facilities."
+    },
+    {
+      "question": "What are the career opportunities after graduation?",
+      "answer": "Graduates can pursue direct employment (70% placement rate), diploma courses, engineering degrees through DCET, ITI courses, or entrepreneurship."
+    },
+    {
+      "question": "Is hostel facility available?",
+      "answer": "Yes, select campuses (Bhadravati, Kalburgi, Mangalore) have hostel facilities for both boys and girls."
+    },
+    {
+      "question": "What is the partnership with Quest Global?",
+      "answer": "Quest Global, in collaboration with Uthishta NGO, supports GJTS schools through infrastructure development, scholarships, and placement opportunities."
+    }
+  ]
+}
