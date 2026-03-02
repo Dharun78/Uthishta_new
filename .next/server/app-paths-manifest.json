@@ -1,5 +1,10 @@
 {
-  "/api/chatbot/route": "app/api/chatbot/route.js",
-  "/dashboard/grants/page": "app/dashboard/grants/page.js",
-  "/api/dashboard/grants/route": "app/api/dashboard/grants/route.js"
+  "/dashboard/pages/custom/page": "app/dashboard/pages/custom/page.js",
+  "/dashboard/pages/custom/new/page": "app/dashboard/pages/custom/new/page.js",
+  "/page": "app/page.js",
+  "/[slug]/page": "app/[slug]/page.js",
+  "/dashboard/pages/custom/[slug]/edit/page": "app/dashboard/pages/custom/[slug]/edit/page.js",
+  "/api/custom-pages/menu/route": "app/api/custom-pages/menu/route.js",
+  "/api/dashboard/custom-pages/[slug]/route": "app/api/dashboard/custom-pages/[slug]/route.js",
+  "/api/dashboard/custom-pages/route": "app/api/dashboard/custom-pages/route.js"
 }

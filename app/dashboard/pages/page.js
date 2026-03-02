@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
 import { 
   FaArrowLeft, FaHome, FaInfoCircle, FaGraduationCap, 
-  FaEnvelope, FaUsers, FaEdit, FaCheck
+  FaEnvelope, FaUsers, FaEdit, FaCheck, FaFileAlt, FaPlus
 } from 'react-icons/fa'
 import Link from 'next/link'
 
@@ -53,6 +53,15 @@ export default function PagesManagementHub() {
       icon: FaUsers,
       color: 'pink',
       url: '/dashboard/pages/alumni'
+    },
+    {
+      id: 'custom',
+      name: 'Custom Pages',
+      description: 'Create and manage custom pages (Facilities, Gallery, etc.)',
+      icon: FaFileAlt,
+      color: 'indigo',
+      url: '/dashboard/pages/custom',
+      badge: 'NEW'
     }
   ]
 
@@ -128,7 +137,12 @@ export default function PagesManagementHub() {
                 transition={{ delay: index * 0.1 }}
               >
                 <Link href={page.url}>
-                  <div className={`bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all cursor-pointer border-t-4 border-${page.color}-500 group`}>
+                  <div className={`bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all cursor-pointer border-t-4 border-${page.color}-500 group relative`}>
+                    {page.badge && (
+                      <span className="absolute top-4 right-4 px-2 py-1 bg-green-500 text-white text-xs font-bold rounded-full">
+                        {page.badge}
+                      </span>
+                    )}
                     <div className="flex items-start justify-between mb-4">
                       <div className={`w-14 h-14 bg-${page.color}-100 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform`}>
                         <Icon className={`text-2xl text-${page.color}-600`} />
@@ -146,7 +160,7 @@ export default function PagesManagementHub() {
                     
                     <div className="mt-4 pt-4 border-t border-gray-200">
                       <span className="text-primary-600 text-sm font-semibold group-hover:underline">
-                        Edit Content →
+                        {page.id === 'custom' ? 'Manage Pages →' : 'Edit Content →'}
                       </span>
                     </div>
                   </div>

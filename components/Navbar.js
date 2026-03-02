@@ -1,19 +1,43 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
+import axios from 'axios'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const [customPages, setCustomPages] = useState([])
 
-  const menuItems = [
+  const staticMenuItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Schools', path: '/schools' },
     { name: 'Admissions', path: '/admissions' },
     { name: 'Alumni', path: '/alumni' },
     { name: 'Contact', path: '/contact' },
+  ]
+
+  useEffect(() => {
+    fetchCustomPages()
+  }, [])
+
+  const fetchCustomPages = async () => {
+    try {
+      const response = await axios.get('/api/custom-pages/menu')
+      setCustomPages(response.data.pages || [])
+    } catch (error) {
+      console.error('Error fetching custom pages:', error)
+    }
+  }
+
+  // Combine static menu items with custom pages
+  const menuItems = [
+    ...staticMenuItems,
+    ...customPages.map(page => ({
+      name: page.title,
+      path: `/${page.slug}`
+    }))
   ]
 
   return (
