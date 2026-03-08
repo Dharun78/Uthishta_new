@@ -7,19 +7,17 @@ import nodemailer from 'nodemailer'
 
 // Create email transporter
 function createTransporter() {
-  if (!process.env.SMTP_USER || !process.env.SMTP_PASS || 
-      process.env.SMTP_USER === 'your-email@gmail.com') {
-    console.log('⚠️  SMTP not configured - emails will be simulated')
+  if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS || 
+      process.env.EMAIL_USER === 'your-email@gmail.com') {
+    console.log('⚠️  Email not configured - emails will be simulated')
     return null
   }
 
   return nodemailer.createTransporter({
-    host: process.env.SMTP_HOST || 'smtp.gmail.com',
-    port: parseInt(process.env.SMTP_PORT) || 587,
-    secure: false,
+    service: 'gmail',
     auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS
     }
   })
 }
@@ -166,7 +164,7 @@ async function sendEventEmails(event, alumni, transporter) {
       const { subject, html } = generateEmailContent(alumnus, event)
 
       const mailOptions = {
-        from: `"GJTS ${event.school}" <${process.env.SMTP_USER}>`,
+        from: `"GJTS ${event.school}" <${process.env.EMAIL_USER}>`,
         to: alumnus.email,
         subject: subject,
         html: html
